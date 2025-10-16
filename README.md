@@ -7,9 +7,7 @@ This repository is a **minimal, referee-oriented** pack to **evaluate the proof*
 - regenerate the **pivot/threshold** constants (Appendix E),
 - check **UB** cuts and **PNE/MET** certificates (Section 6),
 - run a **small descent** demo above the pivot (Section 8),
-- inspect a **sample** of human-readable certificates (Appendix C/H).
-
-> The paper’s TeX source is included as `The_Sigma_Rectangle_Framework_and_the_Non_existence_of_Odd_Perfect_Numbers.tex`.
+- inspect a **sample** of human-readable certificates (Appendix C/H)
 
 ---
 
