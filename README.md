@@ -1,4 +1,4 @@
-# Sigma Rectangle — arXiv 2025 Companion
+# Sigma Rectangle arXiv 2025 Companion
 
 Companion code and certificates for  
 **“The Sigma Rectangle Framework and the Non-Existence of Odd Perfect Numbers”** (arXiv:25xx.xxxxx).
