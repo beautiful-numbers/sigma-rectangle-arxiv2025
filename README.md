@@ -85,6 +85,7 @@ python -c "import run_algo as ra; Xs, rows = ra.window_table(100000); print('X*=
 
 ### 3) Parent-minimal supports — the 27 anchors
 Generates the 27 parent-minimal supports of size 8 without 3 with {5,7} forced. Prints the count and the list.
+macOS / Linux / WSL (bash/zsh)
 ~~~bash
 python - << "PY"
 from pprint import pprint
@@ -94,7 +95,10 @@ print("count =", len(S))
 pprint(S)
 PY
 ~~~
-
+Windows (PowerShell or CMD)
+~~~bash
+python -c "from pprint import pprint; import sys; sys.path.append('.'); from proof_algorithms import generate_minimal_supports as g; S=g(); print('count =', len(S)); pprint(S)"
+~~~
 ---
 
 ## What the remaining codes are for
