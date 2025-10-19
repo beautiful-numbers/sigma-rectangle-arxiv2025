@@ -14,9 +14,9 @@ All routines use exact rational arithmetic and emit auditable outputs that match
 Entry scripts to run the core checks exactly as used in the paper.  
 They provide a small demo, plus a curated set of scenarios for quick verification.
 
-- proof_algorithms.py — public routines wired for the proof workflow  
-- run_algo.py — command line entry for the small descent demo  
-- run_catalog.py — curated scenarios that cover finite windows and large y
+- proof_algorithms.py: public routines wired for the proof workflow  
+- run_algo.py: command line entry for the small descent demo  
+- run_catalog.py: curated scenarios that cover finite windows and large y
 
 **Budget vs Cost pivot and constants**  
 Builds the universal thresholds and the quadratic pivot barrier from explicit prime products.  
@@ -57,8 +57,7 @@ They can be checked directly with the verification commands below.
 - certs/appendix_C_supplement.json
 
 **Paper**  
-LaTeX source of the manuscript for completeness.  
-Reviewers may also use the Zenodo record above for the archived version.
+DOI: https://zenodo.org/records/17383511
 
 
 ---
@@ -106,10 +105,10 @@ PY
 ## What the remaining codes are for
 The other files remain for reproducibility and deeper audit; they are **not required** for the Quickstart above.
 
-- run_catalog.py : bundled scenarios to replay checks end-to-end (finite windows and large-y).  
-- src/run_ceiling_rigorous.py, src/run_exact_digits.py, src/run_rough_profile.py, src/run_seuil_abondance.py : targeted local verifications (ceiling bounds, exact digit control, rough profiles, abundance thresholds).  
-- budget_vs_cost/expand_until_pivot.py : stepwise expansion to the pivot; produces the expand_* artifacts when enabled.  
-- budget_vs_cost/bnb_lock_engine.py : locking/branch engine used in budget-vs-cost analyses.  
-- budget_vs_cost/calculate_m_requis.py, calculate_d_structure.py, calculate_prime_density.py : helper computations used to build the constants table and cross-check RS bounds.  
-- budget_vs_cost/E48_table_small.csv : small auxiliary table included only if consumed by the scripts.  
-- src/A_D6.json, src/B_D6.json, src/C_D6.json : single source of truth for D6 parameters consumed by block A/B/C.
+- run_catalog.py: bundled scenarios to replay checks end-to-end (finite windows and large-y).  
+- src/run_ceiling_rigorous.py, src/run_exact_digits.py, src/run_rough_profile.py, src/run_seuil_abondance.py: targeted local verifications (ceiling bounds, exact digit control, rough profiles, abundance thresholds).  
+- budget_vs_cost/expand_until_pivot.py: stepwise expansion to the pivot; produces the expand_* artifacts when enabled.  
+- budget_vs_cost/bnb_lock_engine.py: locking/branch engine used in budget-vs-cost analyses.  
+- budget_vs_cost/calculate_m_requis.py, calculate_d_structure.py, calculate_prime_density.py: helper computations used to build the constants table and cross-check RS bounds.  
+- budget_vs_cost/E48_table_small.csv: small auxiliary table included only if consumed by the scripts.  
+- src/A_D6.json, src/B_D6.json, src/C_D6.json: single source of truth for D6 parameters consumed by block A/B/C.
