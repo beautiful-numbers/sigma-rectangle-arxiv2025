@@ -1,0 +1,148 @@
+Certificats pour Branche I, 3|N
+================================================================================
+
+
+
+--------------------------------------------------------------------------------Certificat B.4 — ID: D3.01
+ Support S: {3, 5, 7}
+ Verdict: Abondant strict
+
+Ancre auto-générée
+ Exposants: {3: 2, 5: 2, 7: 3}
+ σ(N)/N = 2.088759313249
+ N_anchor = 77175
+ (L, k) = (245, 315)
+
+Théorème B.4 (universel)
+ Δ = S_A − T(N) ; S_A = S_<L + L ; T(N) = N − 1 − k − Somme(G_k)
+
+Calculs
+ σ(N) = 161200
+ S_<L = 1004
+ Somme(G_k) = 82460
+ S_A = 1249
+ T(N) = -5601
+ Δ = 6850
+
+Conclusion
+ Δ > 0 → N_anchor est ABONDANT STRICT. Par héritage, toute la famille l'est.
+
+Certificat B.4 — ID: D3.02
+ Support S: {3, 5, 11, 13}
+ Verdict: Abondant strict
+
+Ancre auto-générée
+ Exposants: {3: 2, 5: 2, 11: 2, 13: 3}
+ σ(N)/N = 2.132729120142
+ N_anchor = 59813325
+ (L, k) = (7605, 7865)
+
+Théorème B.4 (universel)
+ Δ = S_A − T(N) ; S_A = S_<L + L ; T(N) = N − 1 − k − Somme(G_k)
+
+Calculs
+ σ(N) = 127565620
+ S_<L = 69584
+ Somme(G_k) = 67667240
+ S_A = 77189
+ T(N) = -7861781
+ Δ = 7938970
+
+Conclusion
+ Δ > 0 → N_anchor est ABONDANT STRICT. Par héritage, toute la famille l'est.
+
+Certificat B.4 — ID: D3.03
+ Support S: {3, 7, 11, 13, 17}
+ Verdict: Abondant strict
+
+Ancre auto-générée
+ Exposants: {3: 2, 7: 2, 11: 2, 13: 2, 17: 3}
+ σ(N)/N = 2.124878064038
+ N_anchor = 44305478217
+ (L, k) = (200277, 221221)
+
+Théorème B.4 (universel)
+ Δ = S_A − T(N) ; S_A = S_<L + L ; T(N) = N − 1 − k − Somme(G_k)
+
+Calculs
+ σ(N) = 94143738780
+ S_<L = 5147192
+ Somme(G_k) = 49832691872
+ S_A = 5347469
+ T(N) = -5527434877
+ Δ = 5532782346
+
+Conclusion
+ Δ > 0 → N_anchor est ABONDANT STRICT. Par héritage, toute la famille l'est.
+
+Certificat B.4 — ID: D5.01
+ Support S: {3, 11, 13, 17, 19, 23}
+ Verdict: Abondant strict
+
+Ancre auto-générée
+ Exposants: {3: 2, 11: 2, 13: 2, 17: 2, 19: 2, 23: 3}
+ σ(N)/N = 2.015085177150
+ N_anchor = 233616297720663
+ (L, k) = (15281453, 15287571)
+
+Théorème B.4 (universel)
+ Δ = S_A − T(N) ; S_A = S_<L + L ; T(N) = N − 1 − k − Somme(G_k)
+
+Calculs
+ σ(N) = 470756738677680
+ S_<L = 971131064
+ Somme(G_k) = 237139439256928
+ S_A = 986412517
+ T(N) = -3523156823837
+ Δ = 3524143236354
+
+Conclusion
+ Δ > 0 → N_anchor est ABONDANT STRICT. Par héritage, toute la famille l'est.
+
+Certificat B.4 — ID: D5.02
+ Support S: {3, 5, 11, 17, 19}
+ Verdict: Abondant strict
+
+Ancre auto-générée
+ Exposants: {3: 2, 5: 2, 11: 2, 17: 2, 19: 3}
+ σ(N)/N = 2.207532442158
+ N_anchor = 53966783475
+ (L, k) = (226347, 238425)
+
+Théorème B.4 (universel)
+ Δ = S_A − T(N) ; S_A = S_<L + L ; T(N) = N − 1 − k − Somme(G_k)
+
+Calculs
+ σ(N) = 119133425320
+ S_<L = 5437446
+ Somme(G_k) = 65160739626
+ S_A = 5663793
+ T(N) = -11194194577
+ Δ = 11199858370
+
+Conclusion
+ Δ > 0 → N_anchor est ABONDANT STRICT. Par héritage, toute la famille l'est.
+
+Certificat B.4 — ID: D5.03
+ Support S: {3, 7, 11, 13, 19}
+ Verdict: Abondant strict
+
+Ancre auto-générée
+ Exposants: {3: 2, 7: 2, 11: 2, 13: 2, 19: 3}
+ σ(N)/N = 2.110999048798
+ N_anchor = 61854523731
+ (L, k) = (247247, 250173)
+
+Théorème B.4 (universel)
+ Δ = S_A − T(N) ; S_A = S_<L + L ; T(N) = N − 1 − k − Somme(G_k)
+
+Calculs
+ σ(N) = 130574840760
+ S_<L = 5930126
+ Somme(G_k) = 68713889482
+ S_A = 6177373
+ T(N) = -6859615925
+ Δ = 6865793298
+
+Conclusion
+ Δ > 0 → N_anchor est ABONDANT STRICT. Par héritage, toute la famille l'est.
