@@ -75,31 +75,32 @@ python budget_vs_cost/build_constants_table.py --ys 607,613,641,701,997,1499 --c
 python budget_vs_cost/build_constants_table.py --ymin 607 --ymax 2003 --csv-out constants_range.csv
 ```
 
-### 2) Pivot / budget crossing — X*(D), D_pivot(y), and window table
-Shows the calibrated kappa (quadratic growth constant), prints the crossing X*(D), and a small window around it to locate possible abundance at fixed D.
-```bash
-# basic run
-python run_algo.py
+### 2) Pivot / budget crossing — D_pivot(y), X*(D), and window table
 
-# inspect a specific D, print the window rows
-python -c "import run_algo as ra; Xs, rows = ra.window_table(100000); print('X*=', Xs); [print(r) for r in rows]"
-```
+Use `expand_until_pivot.py` to compute the **pivot** and compare **budget vs cost**. Use `run_algo.py` to read the calibrated **kappa** (quadratic growth) and inspect **X*(D)** with a small window.
 
-**Get the pivot at a given y and compare budget vs cost.**  
-Use `expand_until_pivot.py` to print `D_pivot` (budget) and a progress table of the observed structural cost.
 ```bash
-# zsigmondy-based lower bound (fast structural LB cost model)
+# Pivot via Zsigmondy-based lower-bound cost model (fast)
 python budget_vs_cost/expand_until_pivot.py --y 79 --scenario B --mode zsig-lb \
   --m-requis 912 --max-depth 64 --zsig-per-node 2 --respect-y-rude --print-header
 
-# factor mode (trial division on sigma(p^e); direct but costlier)
+# Pivot via direct factor mode (trial division on sigma(p^e); slower but direct)
 python budget_vs_cost/expand_until_pivot.py --y 101 --scenario A --mode factor \
   --m-requis 1331 --max-depth 32 --cap-sigma-digits 200 --respect-y-rude --print-header
 ```
-- **pivot** → `D_pivot = ceil(m * log10(y))` printed when `--m-requis` is provided.  
-- **croissance quadratique** → the calibrated **kappa** reported by `run_algo.py`, used in `X*(D)`.  
-- **budget** → set via `--m-requis <m>`.  
+
+Optional: inspect **kappa** and the **X*(D)** crossing, and print a small window around it:
+
+```bash
+python run_algo.py
+python -c "import run_algo as ra; Xs, rows = ra.window_table(100000); print('X*=', Xs); [print(r) for r in rows]"
+```
+
+**Key**
+- **pivot** → `D_pivot = ceil(m * log10(y))` (printed when you pass `--m-requis <m>`).
+- **budget** → set via `--m-requis`.
 - **cost** → choose the model with `--mode {zsig-lb,factor}`.
+- **quadratic growth** → the calibrated **kappa** reported by `run_algo.py`, used in `X*(D)`.
 
 ### 3) Parent-minimal supports — the 27 anchors
 Generates the 27 parent-minimal supports of size 8, excluding 3, with {5,7} forced. Prints the count and the list.
