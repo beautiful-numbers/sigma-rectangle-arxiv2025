@@ -63,7 +63,7 @@ DOI: https://zenodo.org/records/17383511
 ---
 ## Quickstart
 
-Requires Python 3.11+ — no external packages.
+Requires Python 3.11+. No external packages.
 
 ### 1) Effective constants — fix c1 and Y0
 Recomputes the effective constants table as in the appendix. Prints ε(y), H(y..y²), RS bound, Φ(y), then derives c1 and Y0.
